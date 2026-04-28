@@ -1,8 +1,7 @@
 cat <<EOF > README.md
-# HiveMQ Docker Image (Kubernetes Ready)
-
+# HiveMQ Docker Image
 ## Overview
-This project contains a HiveMQ MQTT broker setup using the Kubernetes image.
+This project contains a HiveMQ MQTT broker setup.
 
 ## Image Details
 - Base Image: hivemq/hivemq4:k8s-4.42.0
