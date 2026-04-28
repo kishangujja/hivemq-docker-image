@@ -1,0 +1,446 @@
+
+Report Summary
+
+┌──────────────────────────────────────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                                      Target                                      │  Type  │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ oee-hivemq:k8s-4.42.0 (ubuntu 22.04)                                             │ ubuntu │       38        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/bin/hivemq.jar                                                        │  jar   │       12        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-amazon-kinesis-extension/hivemq-amazon-kinesis-ext- │  jar   │        6        │    -    │
+│ ension-4.42.0.jar                                                                │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-bridge-extension/hivemq-bridge-extension-4.42.0.jar │  jar   │        4        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-data-lake-extension/hivemq-data-lake-extension-4.4- │  jar   │        8        │    -    │
+│ 2.0.jar                                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-distributed-tracing-extension/hivemq-distributed-t- │  jar   │        1        │    -    │
+│ racing-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-dns-cluster-discovery/hivemq-dns-cluster-discovery- │  jar   │        2        │    -    │
+│ -4.3.5.jar                                                                       │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/hivemq-enterprise-se- │  jar   │        0        │    -    │
+│ curity-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        0        │    -    │
+│ s/mariadb-java-client-2.7.12.jar                                                 │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        2        │    -    │
+│ s/mssql-jdbc-12.10.1.jre11.jar                                                   │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        0        │    -    │
+│ s/postgresql-42.7.7.jar                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-google-cloud-pubsub-extension/hivemq-google-cloud-- │  jar   │        0        │    -    │
+│ pubsub-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-k8s-sync-extension/hivemq-k8s-sync-extension-1.0.3- │  jar   │        2        │    -    │
+│ .jar                                                                             │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-kafka-extension/hivemq-kafka-extension-4.42.0.jar   │  jar   │        7        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-microsoft-sql-server-extension/hivemq-microsoft-sq- │  jar   │        1        │    -    │
+│ l-server-extension-4.42.0.jar                                                    │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-mongodb-extension/hivemq-mongodb-extension-4.42.0.- │  jar   │        0        │    -    │
+│ jar                                                                              │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-mysql-extension/hivemq-mysql-extension-4.42.0.jar   │  jar   │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-postgresql-extension/hivemq-postgresql-extension-4- │  jar   │        1        │    -    │
+│ .42.0.jar                                                                        │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-prometheus-extension/hivemq-prometheus-extension-4- │  jar   │        3        │    -    │
+│ .0.13.jar                                                                        │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-snowflake-extension/hivemq-snowflake-extension-4.4- │  jar   │        0        │    -    │
+│ 2.0.jar                                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/tools/mqtt-cli/lib/mqtt-cli-4.42.0.jar                                │  jar   │        5        │    -    │
+└──────────────────────────────────────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+oee-hivemq:k8s-4.42.0 (ubuntu 22.04)
+====================================
+Total: 38 (UNKNOWN: 0, LOW: 18, MEDIUM: 20, HIGH: 0, CRITICAL: 0)
+
+┌───────────────┬────────────────┬──────────┬──────────┬──────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│    Library    │ Vulnerability  │ Severity │  Status  │      Installed Version       │ Fixed Version │                            Title                             │
+├───────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ bsdutils      │ CVE-2026-27456 │ MEDIUM   │ affected │ 1:2.37.2-4ubuntu3.5          │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ dpkg          │ CVE-2026-2219  │          │          │ 1.21.1ubuntu2.6              │               │ It was discovered that dpkg-deb (a component of dpkg, the    │
+│               │                │          │          │                              │               │ Debian packa...                                              │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-2219                    │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gcc-12-base   │ CVE-2022-27943 │ LOW      │          │ 12.3.0-1ubuntu1~22.04.3      │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│               │                │          │          │                              │               │ stack exhaustion in demangle_const                           │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libblkid1     │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-bin      │ CVE-2026-4046  │          │          │ 2.35-0ubuntu3.13             │               │ glibc: glibc: Denial of Service via iconv() function with    │
+│               │                │          │          │                              │               │ specific character sets...                                   │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4437  │          │          │                              │               │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│               │                │          │          │                              │               │ server response                                              │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4438  │          │          │                              │               │ glibc: glibc: Invalid DNS hostname returned via              │
+│               │                │          │          │                              │               │ gethostbyaddr functions                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├───────────────┼────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ libc6         │ CVE-2026-4046  │          │          │                              │               │ glibc: glibc: Denial of Service via iconv() function with    │
+│               │                │          │          │                              │               │ specific character sets...                                   │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4437  │          │          │                              │               │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│               │                │          │          │                              │               │ server response                                              │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4438  │          │          │                              │               │ glibc: glibc: Invalid DNS hostname returned via              │
+│               │                │          │          │                              │               │ gethostbyaddr functions                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libexpat1     │ CVE-2025-66382 │          │          │ 2.4.7-1ubuntu0.7             │               │ libexpat: libexpat: Denial of service via crafted file       │
+│               │                │          │          │                              │               │ processing                                                   │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2025-66382                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcc-s1     │ CVE-2022-27943 │ LOW      │          │ 12.3.0-1ubuntu1~22.04.3      │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│               │                │          │          │                              │               │ stack exhaustion in demangle_const                           │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcrypt20   │ CVE-2024-2236  │          │          │ 1.9.4-3ubuntu3               │               │ libgcrypt: vulnerable to Marvin Attack                       │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2024-2236                    │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libmount1     │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libncurses6   │ CVE-2023-50495 │ LOW      │          │ 6.3-2ubuntu0.1               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├───────────────┤                │          │          │                              ├───────────────┤                                                              │
+│ libncursesw6  │                │          │          │                              │               │                                                              │
+│               │                │          │          │                              │               │                                                              │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre2-8-0  │ CVE-2022-41409 │          │          │ 10.39-3ubuntu0.1             │               │ pcre2: negative repeat value in a pcre2test subject line     │
+│               │                │          │          │                              │               │ leads to inifinite...                                        │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre3      │ CVE-2017-11164 │          │          │ 2:8.39-13ubuntu0.22.04.1     │               │ pcre: OP_KETRMAX feature in the match function in            │
+│               │                │          │          │                              │               │ pcre_exec.c                                                  │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2017-11164                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libsmartcols1 │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libstdc++6    │ CVE-2022-27943 │ LOW      │          │ 12.3.0-1ubuntu1~22.04.3      │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│               │                │          │          │                              │               │ stack exhaustion in demangle_const                           │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libsystemd0   │ CVE-2023-7008  │          │          │ 249.11-0ubuntu3.20           │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│               │                │          │          │                              │               │ not refused when DNSSEC=yes...                               │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libtinfo6     │ CVE-2023-50495 │          │          │ 6.3-2ubuntu0.1               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libudev1      │ CVE-2023-7008  │          │          │ 249.11-0ubuntu3.20           │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│               │                │          │          │                              │               │ not refused when DNSSEC=yes...                               │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libuuid1      │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libzstd1      │ CVE-2022-4899  │ LOW      │          │ 1.4.8+dfsg-3build1           │               │ zstd: mysql: buffer overrun in util.c                        │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2022-4899                    │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ locales       │ CVE-2026-4046  │ MEDIUM   │          │ 2.35-0ubuntu3.13             │               │ glibc: glibc: Denial of Service via iconv() function with    │
+│               │                │          │          │                              │               │ specific character sets...                                   │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4437  │          │          │                              │               │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│               │                │          │          │                              │               │ server response                                              │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2026-4438  │          │          │                              │               │ glibc: glibc: Invalid DNS hostname returned via              │
+│               │                │          │          │                              │               │ gethostbyaddr functions                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ login         │ CVE-2023-29383 │ LOW      │          │ 1:4.8.1-2ubuntu2.2           │               │ shadow: Improper input validation in shadow-utils package    │
+│               │                │          │          │                              │               │ utility chfn                                                 │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2024-56433 │          │          │                              │               │ shadow-utils: Default subordinate ID configuration in        │
+│               │                │          │          │                              │               │ /etc/login.defs could lead to compromise                     │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ mount         │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-base  │ CVE-2023-50495 │ LOW      │          │ 6.3-2ubuntu0.1               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├───────────────┤                │          │          │                              ├───────────────┤                                                              │
+│ ncurses-bin   │                │          │          │                              │               │                                                              │
+│               │                │          │          │                              │               │                                                              │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ passwd        │ CVE-2023-29383 │          │          │ 1:4.8.1-2ubuntu2.2           │               │ shadow: Improper input validation in shadow-utils package    │
+│               │                │          │          │                              │               │ utility chfn                                                 │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+│               ├────────────────┤          │          │                              ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2024-56433 │          │          │                              │               │ shadow-utils: Default subordinate ID configuration in        │
+│               │                │          │          │                              │               │ /etc/login.defs could lead to compromise                     │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├───────────────┼────────────────┼──────────┤          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ tar           │ CVE-2025-45582 │ MEDIUM   │          │ 1.34+dfsg-1ubuntu0.1.22.04.2 │               │ tar: Tar path traversal                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2025-45582                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ util-linux    │ CVE-2026-27456 │          │          │ 2.37.2-4ubuntu3.5            │               │ util-linux: TOCTOU in the mount program when setting up loop │
+│               │                │          │          │                              │               │ devices                                                      │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├───────────────┼────────────────┤          │          ├──────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ wget          │ CVE-2021-31879 │          │          │ 1.21.2-2ubuntu1.1            │               │ wget: authorization header disclosure on redirect            │
+│               │                │          │          │                              │               │ https://avd.aquasec.com/nvd/cve-2021-31879                   │
+└───────────────┴────────────────┴──────────┴──────────┴──────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+Java (jar)
+==========
+Total: 55 (UNKNOWN: 0, LOW: 9, MEDIUM: 26, HIGH: 20, CRITICAL: 0)
+
+┌──────────────────────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬─────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                           Library                            │    Vulnerability    │ Severity │ Status │ Installed Version │                      Fixed Version                      │                            Title                             │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ch.qos.logback:logback-core (hivemq.jar)                     │ CVE-2025-11226      │ MEDIUM   │ fixed  │ 1.5.18            │ 1.5.19, 1.3.16                                          │ ch.qos.logback/logback-core: Conditional abitrary code       │
+│                                                              │                     │          │        │                   │                                                         │ execution in logback-core                                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11226                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2026-1225       │ LOW      │        │                   │ 1.5.25                                                  │ ch.qos.logback/logback-core: Malicious logback.xml           │
+│                                                              │                     │          │        │                   │                                                         │ configuration file allows instantiation of arbitrary classes │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-1225                    │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core                      │ CVE-2025-52999      │ HIGH     │        │ 2.13.4            │ 2.15.0                                                  │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│ (hivemq-k8s-sync-extension-1.0.3.jar)                        │                     │          │        │                   │                                                         │ Potential StackoverflowError                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.21.1, 2.18.6                                          │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                                              │                     │          │        │                   │                                                         │ Parser Leads to Potential DoS...                             │
+│                                                              │                     │          │        │                   │                                                         │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │ 2.18.1            │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core (hivemq.jar)         │                     │          │        │ 2.19.2            │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-distributed-tracing-extension-4.42.0.jar)            │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.microsoft.sqlserver:mssql-jdbc                           │ CVE-2025-59250      │ HIGH     │        │ 12.10.1           │ 10.2.4.jre11, 11.2.4.jre11, 12.2.1.jre11, 12.6.5.jre11, │ JDBC Driver for SQL Server has improper input validation     │
+│ (mssql-jdbc-12.10.1.jre11.jar)                               │                     │          │        │                   │ 12.8.2.jre11, 12.10.2.jre11, 13.2.1.jre11               │ issue                                                        │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-59250                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.microsoft.sqlserver:mssql-jdbc                           │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-microsoft-sql-server-extension-4.42.0.jar)           │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.microsoft.sqlserver:mssql-jdbc                           │                     │          │        │ 12.10.1.jre11     │                                                         │                                                              │
+│ (mssql-jdbc-12.10.1.jre11.jar)                               │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server (hivemq.jar)                        │ CVE-2025-15022      │ MEDIUM   │        │ 8.14.3            │ 7.7.50, 8.30.0                                          │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                                              ├─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-9467       │          │        │                   │ 7.7.48, 8.28.2                                          │ Vaadin Framework possible file bypass via upload validation  │
+│                                                              │                     │          │        │                   │                                                         │ on the server-side                                           │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-beanutils:commons-beanutils                          │ CVE-2025-48734      │ HIGH     │        │ 1.9.4             │ 1.11.0                                                  │ commons-beanutils: Apache Commons BeanUtils:                 │
+│ (hivemq-dns-cluster-discovery-4.3.5.jar)                     │                     │          │        │                   │                                                         │ PropertyUtilsBean does not suppresses an enum's              │
+│                                                              │                     │          │        │                   │                                                         │ declaredClass property...                                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-48734                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.airlift:aircompressor                                     │ CVE-2025-67721      │          │        │ 2.0.2             │ 2.0.3                                                   │ aircompressor Snappy and LZ4 Java-based decompressor         │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │ implementation can leak information from reused...           │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67721                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec (hivemq-kafka-extension-4.42.0.jar)     │ CVE-2025-58057      │ MEDIUM   │        │ 4.1.118.Final     │ 4.1.125.Final                                           │ netty-codec: netty-codec-compression: Netty's BrotliDecoder  │
+│                                                              │                     │          │        │                   │                                                         │ is vulnerable to DoS via zip bomb style...                   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58057                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec (mqtt-cli-4.42.0.jar)                   │                     │          │        │ 4.1.122.Final     │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec (hivemq.jar)                            │                     │          │        │ 4.1.123.Final     │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec                                         │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-bridge-extension-4.42.0.jar)    │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-data-lake-extension-4.42.0.jar) │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-mysql-extension-4.42.0.jar)     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec                                         │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-postgresql-extension-4.42.0.jar)                     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┼─────────────────────────────────────────────────────────┤                                                              │
+│ io.netty:netty-codec-compression                             │                     │          │        │ 4.2.0.Final       │ 4.2.5.Final                                             │                                                              │
+│ (hivemq-dns-cluster-discovery-4.3.5.jar)                     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec-compression (mqtt-cli-4.42.0.jar)       │                     │          │        │ 4.2.1.Final       │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http                                    │ CVE-2026-33870      │ HIGH     │        │ 4.1.118.Final     │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2026-33870      │ HIGH     │        │ 4.1.123.Final     │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│                                                              │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (mqtt-cli-4.42.0.jar)              │ CVE-2026-33870      │ HIGH     │        │ 4.2.1.Final       │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│                                                              │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2025-55163      │ HIGH     │        │ 4.1.118.Final     │ 4.2.4.Final, 4.1.124.Final                              │ netty: netty-codec-http2: Netty MadeYouReset HTTP/2 DDoS     │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │ Vulnerability                                                │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-55163                   │
+│                                                              ├─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2026-33871      │          │        │                   │ 4.1.132.Final, 4.2.11.Final                             │ netty: Netty: Denial of Service via HTTP/2 CONTINUATION      │
+│                                                              │                     │          │        │                   │                                                         │ frame flood                                                  │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33871                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2025-55163      │          │        │ 4.1.123.Final     │ 4.2.4.Final, 4.1.124.Final                              │ netty: netty-codec-http2: Netty MadeYouReset HTTP/2 DDoS     │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │ Vulnerability                                                │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-55163                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http2                                   │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2026-33871      │          │        │                   │ 4.1.132.Final, 4.2.11.Final                             │ netty: Netty: Denial of Service via HTTP/2 CONTINUATION      │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │ frame flood                                                  │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33871                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http2                                   │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.eclipse.jetty:jetty-http                                 │ CVE-2026-2332       │          │        │ 10.0.24           │ 12.1.7, 12.0.33, 11.0.28, 10.0.28, 9.4.60               │ org.eclipse.jetty/jetty-http: HTTP request smuggling via     │
+│ (hivemq-prometheus-extension-4.0.13.jar)                     │                     │          │        │                   │                                                         │ chunked extension quoted-string parsing                      │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-2332                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2024-6763       │ MEDIUM   │        │                   │ 12.0.12                                                 │ org.eclipse.jetty:jetty-http: jetty: Jetty URI parsing of    │
+│                                                              │                     │          │        │                   │                                                         │ invalid authority                                            │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2024-6763                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-11143      │ LOW      │        │                   │ 12.0.31, 12.1.5                                         │ org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security    │
+│                                                              │                     │          │        │                   │                                                         │ bypass due to differential URI parsing                       │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11143                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.eclipse.jetty:jetty-http (hivemq.jar)                    │ CVE-2026-2332       │ HIGH     │        │ 9.4.57.v20241219  │ 12.1.7, 12.0.33, 11.0.28, 10.0.28, 9.4.60               │ org.eclipse.jetty/jetty-http: HTTP request smuggling via     │
+│                                                              │                     │          │        │                   │                                                         │ chunked extension quoted-string parsing                      │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-2332                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2024-6763       │ MEDIUM   │        │                   │ 12.0.12                                                 │ org.eclipse.jetty:jetty-http: jetty: Jetty URI parsing of    │
+│                                                              │                     │          │        │                   │                                                         │ invalid authority                                            │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2024-6763                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-11143      │ LOW      │        │                   │ 12.0.31, 12.1.5                                         │ org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security    │
+│                                                              │                     │          │        │                   │                                                         │ bypass due to differential URI parsing                       │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11143                   │
+└──────────────────────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴─────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
