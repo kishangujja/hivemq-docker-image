@@ -1,0 +1,827 @@
+
+Report Summary
+
+┌──────────────────────────────────────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                                      Target                                      │  Type  │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ custom-hivemq:k8s-4.42.0 (ubuntu 22.04)                                          │ ubuntu │       138       │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/bin/hivemq.jar                                                        │  jar   │       12        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-amazon-kinesis-extension/hivemq-amazon-kinesis-ext- │  jar   │        6        │    -    │
+│ ension-4.42.0.jar                                                                │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-bridge-extension/hivemq-bridge-extension-4.42.0.jar │  jar   │        4        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-data-lake-extension/hivemq-data-lake-extension-4.4- │  jar   │        8        │    -    │
+│ 2.0.jar                                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-distributed-tracing-extension/hivemq-distributed-t- │  jar   │        1        │    -    │
+│ racing-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-dns-cluster-discovery/hivemq-dns-cluster-discovery- │  jar   │        2        │    -    │
+│ -4.3.5.jar                                                                       │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/hivemq-enterprise-se- │  jar   │        0        │    -    │
+│ curity-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        0        │    -    │
+│ s/mariadb-java-client-2.7.12.jar                                                 │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        2        │    -    │
+│ s/mssql-jdbc-12.10.1.jre11.jar                                                   │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-enterprise-security-extension/internal/jdbc/driver- │  jar   │        0        │    -    │
+│ s/postgresql-42.7.7.jar                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-google-cloud-pubsub-extension/hivemq-google-cloud-- │  jar   │        0        │    -    │
+│ pubsub-extension-4.42.0.jar                                                      │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-k8s-sync-extension/hivemq-k8s-sync-extension-1.0.3- │  jar   │        2        │    -    │
+│ .jar                                                                             │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-kafka-extension/hivemq-kafka-extension-4.42.0.jar   │  jar   │        7        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-microsoft-sql-server-extension/hivemq-microsoft-sq- │  jar   │        1        │    -    │
+│ l-server-extension-4.42.0.jar                                                    │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-mongodb-extension/hivemq-mongodb-extension-4.42.0.- │  jar   │        0        │    -    │
+│ jar                                                                              │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-mysql-extension/hivemq-mysql-extension-4.42.0.jar   │  jar   │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-postgresql-extension/hivemq-postgresql-extension-4- │  jar   │        1        │    -    │
+│ .42.0.jar                                                                        │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-prometheus-extension/hivemq-prometheus-extension-4- │  jar   │        3        │    -    │
+│ .0.13.jar                                                                        │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/extensions/hivemq-snowflake-extension/hivemq-snowflake-extension-4.4- │  jar   │        0        │    -    │
+│ 2.0.jar                                                                          │        │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ opt/hivemq/tools/mqtt-cli/lib/mqtt-cli-4.42.0.jar                                │  jar   │        5        │    -    │
+└──────────────────────────────────────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+custom-hivemq:k8s-4.42.0 (ubuntu 22.04)
+=======================================
+Total: 138 (UNKNOWN: 0, LOW: 62, MEDIUM: 65, HIGH: 11, CRITICAL: 0)
+
+┌────────────────┬────────────────┬──────────┬──────────┬──────────────────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────────┐
+│    Library     │ Vulnerability  │ Severity │  Status  │      Installed Version       │      Fixed Version      │                            Title                             │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ bsdutils       │ CVE-2026-27456 │ MEDIUM   │ affected │ 1:2.37.2-4ubuntu3.4          │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ curl           │ CVE-2025-14017 │          │ fixed    │ 7.81.0-1ubuntu1.20           │ 7.81.0-1ubuntu1.22      │ curl: curl: Security bypass due to global TLS option changes │
+│                │                │          │          │                              │                         │ in multi-threaded...                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-14017                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-1965  │          │          │                              │ 7.81.0-1ubuntu1.23      │ curl: curl: Authentication bypass due to incorrect           │
+│                │                │          │          │                              │                         │ connection reuse with Negotiate authentication...            │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-1965                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-3783  │          │          │                              │                         │ curl: curl: Information disclosure via OAuth2 bearer token   │
+│                │                │          │          │                              │                         │ leakage during HTTP(S) redirect...                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-3783                    │
+│                ├────────────────┼──────────┤          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-0167  │ LOW      │          │                              │                         │ When asked to use a `.netrc` file for credentials **and** to │
+│                │                │          │          │                              │                         │ follow...                                                    │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-14524 │          │          │                              │ 7.81.0-1ubuntu1.22      │ curl: Information disclosure via cross-protocol redirect     │
+│                │                │          │          │                              │                         │ with OAuth2 bearer token                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-14524                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-15079 │          │          │                              │                         │ curl: Host verification bypass during SSH transfers          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15079                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-15224 │          │          │                              │                         │ curl: libssh key passphrase bypass without agent set         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15224                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-3784  │          │          │                              │ 7.81.0-1ubuntu1.23      │ curl: curl: Unauthorized access due to improper HTTP proxy   │
+│                │                │          │          │                              │                         │ connection reuse                                             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-3784                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ dirmngr        │ CVE-2025-68973 │ HIGH     │          │ 2.2.27-3ubuntu2.4            │ 2.2.27-3ubuntu2.5       │ GnuPG: GnuPG: Information disclosure and potential arbitrary │
+│                │                │          │          │                              │                         │ code execution via out-of-bounds write...                    │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-68973                   │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ dpkg           │ CVE-2026-2219  │ MEDIUM   │ affected │ 1.21.1ubuntu2.3              │                         │ It was discovered that dpkg-deb (a component of dpkg, the    │
+│                │                │          │          │                              │                         │ Debian packa...                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-2219                    │
+│                ├────────────────┼──────────┼──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-6297  │ LOW      │ fixed    │                              │ 1.21.1ubuntu2.6         │ It was discovered that dpkg-deb does not properly sanitize   │
+│                │                │          │          │                              │                         │ directory p ......                                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-6297                    │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gcc-12-base    │ CVE-2022-27943 │          │ affected │ 12.3.0-1ubuntu1~22.04        │                         │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                │                │          │          │                              │                         │ stack exhaustion in demangle_const                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2023-4039  │          │ fixed    │                              │ 12.3.0-1ubuntu1~22.04.2 │ gcc: -fstack-protector fails to guard dynamic stack          │
+│                │                │          │          │                              │                         │ allocations on ARM64                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-4039                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg          │ CVE-2025-68973 │ HIGH     │          │ 2.2.27-3ubuntu2.4            │ 2.2.27-3ubuntu2.5       │ GnuPG: GnuPG: Information disclosure and potential arbitrary │
+│                │                │          │          │                              │                         │ code execution via out-of-bounds write...                    │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-68973                   │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gnupg-l10n     │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gnupg-utils    │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpg            │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpg-agent      │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpg-wks-client │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpg-wks-server │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpgconf        │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpgsm          │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┤                │          │          │                              │                         │                                                              │
+│ gpgv           │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libblkid1      │ CVE-2026-27456 │ MEDIUM   │ affected │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libc-bin       │ CVE-2025-15281 │          │ fixed    │ 2.35-0ubuntu3.10             │ 2.35-0ubuntu3.13        │ glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return    │
+│                │                │          │          │                              │                         │ uninitialized memory                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15281                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-8058  │          │          │                              │ 2.35-0ubuntu3.11        │ glibc: Double free in glibc                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-8058                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0861  │          │          │                              │ 2.35-0ubuntu3.13        │ glibc: Integer overflow in memalign leads to heap corruption │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0861                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0915  │          │          │                              │                         │ glibc: glibc: Information disclosure via zero-valued network │
+│                │                │          │          │                              │                         │ query                                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0915                    │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4046  │          │ affected │                              │                         │ glibc: glibc: Denial of Service via iconv() function with    │
+│                │                │          │          │                              │                         │ specific character sets...                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4437  │          │          │                              │                         │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│                │                │          │          │                              │                         │ server response                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4438  │          │          │                              │                         │ glibc: glibc: Invalid DNS hostname returned via              │
+│                │                │          │          │                              │                         │ gethostbyaddr functions                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├────────────────┼────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libc6          │ CVE-2025-15281 │          │ fixed    │                              │ 2.35-0ubuntu3.13        │ glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return    │
+│                │                │          │          │                              │                         │ uninitialized memory                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15281                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-8058  │          │          │                              │ 2.35-0ubuntu3.11        │ glibc: Double free in glibc                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-8058                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0861  │          │          │                              │ 2.35-0ubuntu3.13        │ glibc: Integer overflow in memalign leads to heap corruption │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0861                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0915  │          │          │                              │                         │ glibc: glibc: Information disclosure via zero-valued network │
+│                │                │          │          │                              │                         │ query                                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0915                    │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4046  │          │ affected │                              │                         │ glibc: glibc: Denial of Service via iconv() function with    │
+│                │                │          │          │                              │                         │ specific character sets...                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4437  │          │          │                              │                         │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│                │                │          │          │                              │                         │ server response                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4438  │          │          │                              │                         │ glibc: glibc: Invalid DNS hostname returned via              │
+│                │                │          │          │                              │                         │ gethostbyaddr functions                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcap2        │ CVE-2026-4878  │          │ fixed    │ 1:2.44-1ubuntu0.22.04.2      │ 1:2.44-1ubuntu0.22.04.3 │ libcap: libcap: Privilege escalation via TOCTOU race         │
+│                │                │          │          │                              │                         │ condition in cap_set_file()                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4878                    │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl4       │ CVE-2025-14017 │          │          │ 7.81.0-1ubuntu1.20           │ 7.81.0-1ubuntu1.22      │ curl: curl: Security bypass due to global TLS option changes │
+│                │                │          │          │                              │                         │ in multi-threaded...                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-14017                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-1965  │          │          │                              │ 7.81.0-1ubuntu1.23      │ curl: curl: Authentication bypass due to incorrect           │
+│                │                │          │          │                              │                         │ connection reuse with Negotiate authentication...            │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-1965                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-3783  │          │          │                              │                         │ curl: curl: Information disclosure via OAuth2 bearer token   │
+│                │                │          │          │                              │                         │ leakage during HTTP(S) redirect...                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-3783                    │
+│                ├────────────────┼──────────┤          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-0167  │ LOW      │          │                              │                         │ When asked to use a `.netrc` file for credentials **and** to │
+│                │                │          │          │                              │                         │ follow...                                                    │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-14524 │          │          │                              │ 7.81.0-1ubuntu1.22      │ curl: Information disclosure via cross-protocol redirect     │
+│                │                │          │          │                              │                         │ with OAuth2 bearer token                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-14524                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-15079 │          │          │                              │                         │ curl: Host verification bypass during SSH transfers          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15079                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-15224 │          │          │                              │                         │ curl: libssh key passphrase bypass without agent set         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15224                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-3784  │          │          │                              │ 7.81.0-1ubuntu1.23      │ curl: curl: Unauthorized access due to improper HTTP proxy   │
+│                │                │          │          │                              │                         │ connection reuse                                             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-3784                    │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libexpat1      │ CVE-2025-66382 │ MEDIUM   │ affected │ 2.4.7-1ubuntu0.6             │                         │ libexpat: libexpat: Denial of service via crafted file       │
+│                │                │          │          │                              │                         │ processing                                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-66382                   │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-24515 │          │ fixed    │                              │ 2.4.7-1ubuntu0.7        │ libexpat: libexpat null pointer dereference                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-24515                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-25210 │          │          │                              │                         │ libexpat: libexpat: Information disclosure and data          │
+│                │                │          │          │                              │                         │ integrity issues due to integer overflow...                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-25210                   │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcc-s1      │ CVE-2022-27943 │ LOW      │ affected │ 12.3.0-1ubuntu1~22.04        │                         │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                │                │          │          │                              │                         │ stack exhaustion in demangle_const                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2023-4039  │          │ fixed    │                              │ 12.3.0-1ubuntu1~22.04.2 │ gcc: -fstack-protector fails to guard dynamic stack          │
+│                │                │          │          │                              │                         │ allocations on ARM64                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-4039                    │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcrypt20    │ CVE-2024-2236  │          │ affected │ 1.9.4-3ubuntu3               │                         │ libgcrypt: vulnerable to Marvin Attack                       │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2024-2236                    │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgnutls30    │ CVE-2025-14831 │ MEDIUM   │ fixed    │ 3.7.3-4ubuntu1.7             │ 3.7.3-4ubuntu1.8        │ gnutls: GnuTLS: Denial of Service via excessive resource     │
+│                │                │          │          │                              │                         │ consumption during certificate verification...               │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-14831                   │
+│                ├────────────────┼──────────┤          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-9820  │ LOW      │          │                              │                         │ gnutls: Stack-based Buffer Overflow in                       │
+│                │                │          │          │                              │                         │ gnutls_pkcs11_token_init() Function                          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-9820                    │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libmount1      │ CVE-2026-27456 │ MEDIUM   │ affected │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libncurses6    │ CVE-2023-50495 │ LOW      │          │ 6.3-2ubuntu0.1               │                         │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├────────────────┤                │          │          │                              ├─────────────────────────┤                                                              │
+│ libncursesw6   │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre2-8-0   │ CVE-2022-41409 │          │          │ 10.39-3ubuntu0.1             │                         │ pcre2: negative repeat value in a pcre2test subject line     │
+│                │                │          │          │                              │                         │ leads to inifinite...                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre3       │ CVE-2017-11164 │          │          │ 2:8.39-13ubuntu0.22.04.1     │                         │ pcre: OP_KETRMAX feature in the match function in            │
+│                │                │          │          │                              │                         │ pcre_exec.c                                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2017-11164                   │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpng16-16    │ CVE-2025-64505 │ MEDIUM   │ fixed    │ 1.6.37-3build5               │ 1.6.37-3ubuntu0.1       │ libpng: LIBPNG heap buffer overflow via malformed palette    │
+│                │                │          │          │                              │                         │ index                                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-64505                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-64506 │          │          │                              │                         │ libpng: LIBPNG heap buffer over-read                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-64506                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-64720 │          │          │                              │                         │ libpng: LIBPNG buffer overflow                               │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-64720                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-65018 │          │          │                              │                         │ libpng: LIBPNG heap buffer overflow                          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-65018                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-66293 │          │          │                              │ 1.6.37-3ubuntu0.3       │ libpng: LIBPNG out-of-bounds read in                         │
+│                │                │          │          │                              │                         │ png_image_read_composite                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-66293                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22695 │          │          │                              │                         │ libpng: libpng: Denial of service and information disclosure │
+│                │                │          │          │                              │                         │ via heap buffer over-read...                                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22695                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22801 │          │          │                              │                         │ libpng: libpng: Information disclosure and denial of service │
+│                │                │          │          │                              │                         │ via integer truncation in...                                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22801                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-25646 │          │          │                              │ 1.6.37-3ubuntu0.4       │ libpng: LIBPNG has a heap buffer overflow in                 │
+│                │                │          │          │                              │                         │ png_set_quantize                                             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-25646                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsmartcols1  │ CVE-2026-27456 │          │ affected │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsqlite3-0   │ CVE-2025-6965  │          │ fixed    │ 3.37.2-2ubuntu0.4            │ 3.37.2-2ubuntu0.5       │ sqlite: Integer Truncation in SQLite                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-6965                    │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libssh-4       │ CVE-2026-0964  │          │          │ 0.9.6-2ubuntu0.22.04.4       │ 0.9.6-2ubuntu0.22.04.6  │ libssh: Improper sanitation of paths received from SCP       │
+│                │                │          │          │                              │                         │ servers                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0964                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0967  │          │          │                              │                         │ libssh: libssh: Denial of Service via inefficient regular    │
+│                │                │          │          │                              │                         │ expression processing                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0967                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0968  │          │          │                              │                         │ libssh: libssh: Denial of Service due to malformed SFTP      │
+│                │                │          │          │                              │                         │ message                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0968                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-3731  │          │          │                              │ 0.9.6-2ubuntu0.22.04.7  │ libssh: libssh: Denial of Service via out-of-bounds read in  │
+│                │                │          │          │                              │                         │ SFTP extension name...                                       │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-3731                    │
+│                ├────────────────┼──────────┤          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-8114  │ LOW      │          │                              │ 0.9.6-2ubuntu0.22.04.5  │ libssh: NULL Pointer Dereference in libssh KEX Session ID    │
+│                │                │          │          │                              │                         │ Calculation                                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-8114                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-8277  │          │          │                              │ 0.9.6-2ubuntu0.22.04.6  │ libssh: Memory Exhaustion via Repeated Key Exchange in       │
+│                │                │          │          │                              │                         │ libssh                                                       │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-8277                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0965  │          │          │                              │                         │ libssh: libssh: Denial of Service via improper configuration │
+│                │                │          │          │                              │                         │ file handling                                                │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0965                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0966  │          │          │                              │                         │ libssh: Buffer underflow in ssh_get_hexa() on invalid input  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0966                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl3        │ CVE-2025-15467 │ MEDIUM   │          │ 3.0.2-0ubuntu1.19            │ 3.0.2-0ubuntu1.21       │ openssl: OpenSSL: Remote code execution or Denial of Service │
+│                │                │          │          │                              │                         │ via oversized Initialization...                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15467                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-9230  │          │          │                              │ 3.0.2-0ubuntu1.20       │ openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-9230                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-31790 │          │          │                              │ 3.0.2-0ubuntu1.23       │ openssl: openssl: Information Disclosure from Uninitialized  │
+│                │                │          │          │                              │                         │ Memory via Invalid RSA Public Key...                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-31790                   │
+│                ├────────────────┼──────────┤          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-68160 │ LOW      │          │                              │ 3.0.2-0ubuntu1.21       │ openssl: OpenSSL: Denial of Service due to out-of-bounds     │
+│                │                │          │          │                              │                         │ write in BIO filter...                                       │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-68160                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69418 │          │          │                              │                         │ openssl: OpenSSL: Information disclosure and data tampering  │
+│                │                │          │          │                              │                         │ via specific low-level OCB encryption/decryption...          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69418                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69419 │          │          │                              │                         │ openssl: OpenSSL: Arbitrary code execution due to            │
+│                │                │          │          │                              │                         │ out-of-bounds write in PKCS#12 processing...                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69419                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69420 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via malformed TimeStamp  │
+│                │                │          │          │                              │                         │ Response                                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69420                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69421 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via malformed PKCS#12    │
+│                │                │          │          │                              │                         │ file processing                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69421                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22795 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to type confusion in │
+│                │                │          │          │                              │                         │ PKCS#12 file...                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22795                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22796 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via type confusion in    │
+│                │                │          │          │                              │                         │ PKCS#7 signature verification...                             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22796                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28387 │          │          │                              │ 3.0.2-0ubuntu1.23       │ openssl: OpenSSL: Arbitrary code execution due to            │
+│                │                │          │          │                              │                         │ use-after-free in DANE TLSA authentication...                │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28387                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28388 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to NULL pointer      │
+│                │                │          │          │                              │                         │ dereference in delta...                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28388                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28389 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service vulnerability in CMS     │
+│                │                │          │          │                              │                         │ processing                                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28389                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28390 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to NULL pointer      │
+│                │                │          │          │                              │                         │ dereference in CMS...                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28390                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-31789 │          │          │                              │                         │ openssl: OpenSSL: Heap buffer overflow on 32-bit systems     │
+│                │                │          │          │                              │                         │ from large X.509 certificate...                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-31789                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libstdc++6     │ CVE-2022-27943 │          │ affected │ 12.3.0-1ubuntu1~22.04        │                         │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
+│                │                │          │          │                              │                         │ stack exhaustion in demangle_const                           │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2023-4039  │          │ fixed    │                              │ 12.3.0-1ubuntu1~22.04.2 │ gcc: -fstack-protector fails to guard dynamic stack          │
+│                │                │          │          │                              │                         │ allocations on ARM64                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-4039                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsystemd0    │ CVE-2026-29111 │ MEDIUM   │          │ 249.11-0ubuntu3.16           │ 249.11-0ubuntu3.19      │ systemd: systemd: Arbitrary code execution or Denial of      │
+│                │                │          │          │                              │                         │ Service via spurious IPC...                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-29111                   │
+│                ├────────────────┼──────────┼──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2023-7008  │ LOW      │ affected │                              │                         │ systemd-resolved: Unsigned name response in signed zone is   │
+│                │                │          │          │                              │                         │ not refused when DNSSEC=yes...                               │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libtasn1-6     │ CVE-2025-13151 │ MEDIUM   │ fixed    │ 4.18.0-4ubuntu0.1            │ 4.18.0-4ubuntu0.2       │ libtasn1: libtasn1: Denial of Service via stack-based buffer │
+│                │                │          │          │                              │                         │ overflow in asn1_expend_octet_string                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-13151                   │
+│                ├────────────────┼──────────┤          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2021-46848 │ LOW      │          │                              │                         │ libtasn1: Out-of-bound access in ETYPE_OK                    │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2021-46848                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libtinfo6      │ CVE-2023-50495 │          │ affected │ 6.3-2ubuntu0.1               │                         │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libudev1       │ CVE-2026-29111 │ MEDIUM   │ fixed    │ 249.11-0ubuntu3.16           │ 249.11-0ubuntu3.19      │ systemd: systemd: Arbitrary code execution or Denial of      │
+│                │                │          │          │                              │                         │ Service via spurious IPC...                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-29111                   │
+│                ├────────────────┼──────────┼──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2023-7008  │ LOW      │ affected │                              │                         │ systemd-resolved: Unsigned name response in signed zone is   │
+│                │                │          │          │                              │                         │ not refused when DNSSEC=yes...                               │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libuuid1       │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libzstd1       │ CVE-2022-4899  │ LOW      │          │ 1.4.8+dfsg-3build1           │                         │ zstd: mysql: buffer overrun in util.c                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2022-4899                    │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ locales        │ CVE-2025-15281 │ MEDIUM   │ fixed    │ 2.35-0ubuntu3.10             │ 2.35-0ubuntu3.13        │ glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return    │
+│                │                │          │          │                              │                         │ uninitialized memory                                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15281                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-8058  │          │          │                              │ 2.35-0ubuntu3.11        │ glibc: Double free in glibc                                  │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-8058                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0861  │          │          │                              │ 2.35-0ubuntu3.13        │ glibc: Integer overflow in memalign leads to heap corruption │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0861                    │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-0915  │          │          │                              │                         │ glibc: glibc: Information disclosure via zero-valued network │
+│                │                │          │          │                              │                         │ query                                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-0915                    │
+│                ├────────────────┤          ├──────────┤                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4046  │          │ affected │                              │                         │ glibc: glibc: Denial of Service via iconv() function with    │
+│                │                │          │          │                              │                         │ specific character sets...                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4046                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4437  │          │          │                              │                         │ glibc: glibc: Incorrect DNS response parsing via crafted DNS │
+│                │                │          │          │                              │                         │ server response                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4437                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4438  │          │          │                              │                         │ glibc: glibc: Invalid DNS hostname returned via              │
+│                │                │          │          │                              │                         │ gethostbyaddr functions                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-4438                    │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ login          │ CVE-2023-29383 │ LOW      │          │ 1:4.8.1-2ubuntu2.2           │                         │ shadow: Improper input validation in shadow-utils package    │
+│                │                │          │          │                              │                         │ utility chfn                                                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2024-56433 │          │          │                              │                         │ shadow-utils: Default subordinate ID configuration in        │
+│                │                │          │          │                              │                         │ /etc/login.defs could lead to compromise                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ mount          │ CVE-2026-27456 │ MEDIUM   │          │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┼──────────┤          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-base   │ CVE-2023-50495 │ LOW      │          │ 6.3-2ubuntu0.1               │                         │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
+├────────────────┤                │          │          │                              ├─────────────────────────┤                                                              │
+│ ncurses-bin    │                │          │          │                              │                         │                                                              │
+│                │                │          │          │                              │                         │                                                              │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl        │ CVE-2025-15467 │ MEDIUM   │ fixed    │ 3.0.2-0ubuntu1.19            │ 3.0.2-0ubuntu1.21       │ openssl: OpenSSL: Remote code execution or Denial of Service │
+│                │                │          │          │                              │                         │ via oversized Initialization...                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-15467                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-9230  │          │          │                              │ 3.0.2-0ubuntu1.20       │ openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-9230                    │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-31790 │          │          │                              │ 3.0.2-0ubuntu1.23       │ openssl: openssl: Information Disclosure from Uninitialized  │
+│                │                │          │          │                              │                         │ Memory via Invalid RSA Public Key...                         │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-31790                   │
+│                ├────────────────┼──────────┤          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-68160 │ LOW      │          │                              │ 3.0.2-0ubuntu1.21       │ openssl: OpenSSL: Denial of Service due to out-of-bounds     │
+│                │                │          │          │                              │                         │ write in BIO filter...                                       │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-68160                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69418 │          │          │                              │                         │ openssl: OpenSSL: Information disclosure and data tampering  │
+│                │                │          │          │                              │                         │ via specific low-level OCB encryption/decryption...          │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69418                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69419 │          │          │                              │                         │ openssl: OpenSSL: Arbitrary code execution due to            │
+│                │                │          │          │                              │                         │ out-of-bounds write in PKCS#12 processing...                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69419                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69420 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via malformed TimeStamp  │
+│                │                │          │          │                              │                         │ Response                                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69420                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-69421 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via malformed PKCS#12    │
+│                │                │          │          │                              │                         │ file processing                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-69421                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22795 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to type confusion in │
+│                │                │          │          │                              │                         │ PKCS#12 file...                                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22795                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-22796 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service via type confusion in    │
+│                │                │          │          │                              │                         │ PKCS#7 signature verification...                             │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-22796                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28387 │          │          │                              │ 3.0.2-0ubuntu1.23       │ openssl: OpenSSL: Arbitrary code execution due to            │
+│                │                │          │          │                              │                         │ use-after-free in DANE TLSA authentication...                │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28387                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28388 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to NULL pointer      │
+│                │                │          │          │                              │                         │ dereference in delta...                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28388                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28389 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service vulnerability in CMS     │
+│                │                │          │          │                              │                         │ processing                                                   │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28389                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-28390 │          │          │                              │                         │ openssl: OpenSSL: Denial of Service due to NULL pointer      │
+│                │                │          │          │                              │                         │ dereference in CMS...                                        │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-28390                   │
+│                ├────────────────┤          │          │                              │                         ├──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-31789 │          │          │                              │                         │ openssl: OpenSSL: Heap buffer overflow on 32-bit systems     │
+│                │                │          │          │                              │                         │ from large X.509 certificate...                              │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-31789                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ passwd         │ CVE-2023-29383 │          │ affected │ 1:4.8.1-2ubuntu2.2           │                         │ shadow: Improper input validation in shadow-utils package    │
+│                │                │          │          │                              │                         │ utility chfn                                                 │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2023-29383                   │
+│                ├────────────────┤          │          │                              ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2024-56433 │          │          │                              │                         │ shadow-utils: Default subordinate ID configuration in        │
+│                │                │          │          │                              │                         │ /etc/login.defs could lead to compromise                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├────────────────┼────────────────┼──────────┼──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ perl-base      │ CVE-2025-40909 │ MEDIUM   │ fixed    │ 5.34.0-3ubuntu1.4            │ 5.34.0-3ubuntu1.5       │ perl: Perl threads have a working directory race condition   │
+│                │                │          │          │                              │                         │ where file operations...                                     │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-40909                   │
+├────────────────┼────────────────┤          ├──────────┼──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ tar            │ CVE-2025-45582 │          │ affected │ 1.34+dfsg-1ubuntu0.1.22.04.2 │                         │ tar: Tar path traversal                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2025-45582                   │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ util-linux     │ CVE-2026-27456 │          │          │ 2.37.2-4ubuntu3.4            │                         │ util-linux: TOCTOU in the mount program when setting up loop │
+│                │                │          │          │                              │                         │ devices                                                      │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2026-27456                   │
+├────────────────┼────────────────┤          │          ├──────────────────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ wget           │ CVE-2021-31879 │          │          │ 1.21.2-2ubuntu1.1            │                         │ wget: authorization header disclosure on redirect            │
+│                │                │          │          │                              │                         │ https://avd.aquasec.com/nvd/cve-2021-31879                   │
+└────────────────┴────────────────┴──────────┴──────────┴──────────────────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+Java (jar)
+==========
+Total: 55 (UNKNOWN: 0, LOW: 9, MEDIUM: 26, HIGH: 20, CRITICAL: 0)
+
+┌──────────────────────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬─────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                           Library                            │    Vulnerability    │ Severity │ Status │ Installed Version │                      Fixed Version                      │                            Title                             │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ch.qos.logback:logback-core (hivemq.jar)                     │ CVE-2025-11226      │ MEDIUM   │ fixed  │ 1.5.18            │ 1.5.19, 1.3.16                                          │ ch.qos.logback/logback-core: Conditional abitrary code       │
+│                                                              │                     │          │        │                   │                                                         │ execution in logback-core                                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11226                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2026-1225       │ LOW      │        │                   │ 1.5.25                                                  │ ch.qos.logback/logback-core: Malicious logback.xml           │
+│                                                              │                     │          │        │                   │                                                         │ configuration file allows instantiation of arbitrary classes │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-1225                    │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core                      │ CVE-2025-52999      │ HIGH     │        │ 2.13.4            │ 2.15.0                                                  │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│ (hivemq-k8s-sync-extension-1.0.3.jar)                        │                     │          │        │                   │                                                         │ Potential StackoverflowError                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.21.1, 2.18.6                                          │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                                              │                     │          │        │                   │                                                         │ Parser Leads to Potential DoS...                             │
+│                                                              │                     │          │        │                   │                                                         │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │ 2.18.1            │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core (hivemq.jar)         │                     │          │        │ 2.19.2            │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-distributed-tracing-extension-4.42.0.jar)            │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.fasterxml.jackson.core:jackson-core                      │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.microsoft.sqlserver:mssql-jdbc                           │ CVE-2025-59250      │ HIGH     │        │ 12.10.1           │ 10.2.4.jre11, 11.2.4.jre11, 12.2.1.jre11, 12.6.5.jre11, │ JDBC Driver for SQL Server has improper input validation     │
+│ (mssql-jdbc-12.10.1.jre11.jar)                               │                     │          │        │                   │ 12.8.2.jre11, 12.10.2.jre11, 13.2.1.jre11               │ issue                                                        │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-59250                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ com.microsoft.sqlserver:mssql-jdbc                           │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-microsoft-sql-server-extension-4.42.0.jar)           │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ com.microsoft.sqlserver:mssql-jdbc                           │                     │          │        │ 12.10.1.jre11     │                                                         │                                                              │
+│ (mssql-jdbc-12.10.1.jre11.jar)                               │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server (hivemq.jar)                        │ CVE-2025-15022      │ MEDIUM   │        │ 8.14.3            │ 7.7.50, 8.30.0                                          │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                                              ├─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-9467       │          │        │                   │ 7.7.48, 8.28.2                                          │ Vaadin Framework possible file bypass via upload validation  │
+│                                                              │                     │          │        │                   │                                                         │ on the server-side                                           │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-beanutils:commons-beanutils                          │ CVE-2025-48734      │ HIGH     │        │ 1.9.4             │ 1.11.0                                                  │ commons-beanutils: Apache Commons BeanUtils:                 │
+│ (hivemq-dns-cluster-discovery-4.3.5.jar)                     │                     │          │        │                   │                                                         │ PropertyUtilsBean does not suppresses an enum's              │
+│                                                              │                     │          │        │                   │                                                         │ declaredClass property...                                    │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-48734                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.airlift:aircompressor                                     │ CVE-2025-67721      │          │        │ 2.0.2             │ 2.0.3                                                   │ aircompressor Snappy and LZ4 Java-based decompressor         │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │ implementation can leak information from reused...           │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67721                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec (hivemq-kafka-extension-4.42.0.jar)     │ CVE-2025-58057      │ MEDIUM   │        │ 4.1.118.Final     │ 4.1.125.Final                                           │ netty-codec: netty-codec-compression: Netty's BrotliDecoder  │
+│                                                              │                     │          │        │                   │                                                         │ is vulnerable to DoS via zip bomb style...                   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58057                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec (mqtt-cli-4.42.0.jar)                   │                     │          │        │ 4.1.122.Final     │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec (hivemq.jar)                            │                     │          │        │ 4.1.123.Final     │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec                                         │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-bridge-extension-4.42.0.jar)    │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-data-lake-extension-4.42.0.jar) │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec (hivemq-mysql-extension-4.42.0.jar)     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec                                         │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-postgresql-extension-4.42.0.jar)                     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┼─────────────────────────────────────────────────────────┤                                                              │
+│ io.netty:netty-codec-compression                             │                     │          │        │ 4.2.0.Final       │ 4.2.5.Final                                             │                                                              │
+│ (hivemq-dns-cluster-discovery-4.3.5.jar)                     │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        ├───────────────────┤                                                         │                                                              │
+│ io.netty:netty-codec-compression (mqtt-cli-4.42.0.jar)       │                     │          │        │ 4.2.1.Final       │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http                                    │ CVE-2026-33870      │ HIGH     │        │ 4.1.118.Final     │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2026-33870      │ HIGH     │        │ 4.1.123.Final     │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│                                                              │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (hivemq.jar)                       │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-bridge-extension-4.42.0.jar)                         │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http                                    │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http (mqtt-cli-4.42.0.jar)              │ CVE-2026-33870      │ HIGH     │        │ 4.2.1.Final       │ 4.1.132.Final, 4.2.10.Final                             │ io.netty/netty-codec-http: Netty: Request smuggling via      │
+│                                                              │                     │          │        │                   │                                                         │ incorrect parsing of HTTP/1.1 chunked transfer encoding...   │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33870                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-67735      │ MEDIUM   │        │                   │ 4.2.8.Final, 4.1.129.Final                              │ netty-codec-http: Netty (netty-codec-http): Request          │
+│                                                              │                     │          │        │                   │                                                         │ Smuggling via CRLF Injection                                 │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-67735                   │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-58056      │ LOW      │        │                   │ 4.1.125.Final, 4.2.5.Final                              │ netty-codec-http: Netty is vulnerable to request smuggling   │
+│                                                              │                     │          │        │                   │                                                         │ due to incorrect parsing of...                               │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-58056                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2025-55163      │ HIGH     │        │ 4.1.118.Final     │ 4.2.4.Final, 4.1.124.Final                              │ netty: netty-codec-http2: Netty MadeYouReset HTTP/2 DDoS     │
+│ (hivemq-kafka-extension-4.42.0.jar)                          │                     │          │        │                   │                                                         │ Vulnerability                                                │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-55163                   │
+│                                                              ├─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2026-33871      │          │        │                   │ 4.1.132.Final, 4.2.11.Final                             │ netty: Netty: Denial of Service via HTTP/2 CONTINUATION      │
+│                                                              │                     │          │        │                   │                                                         │ frame flood                                                  │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33871                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2025-55163      │          │        │ 4.1.123.Final     │ 4.2.4.Final, 4.1.124.Final                              │ netty: netty-codec-http2: Netty MadeYouReset HTTP/2 DDoS     │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │ Vulnerability                                                │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-55163                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http2                                   │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ io.netty:netty-codec-http2                                   │ CVE-2026-33871      │          │        │                   │ 4.1.132.Final, 4.2.11.Final                             │ netty: Netty: Denial of Service via HTTP/2 CONTINUATION      │
+│ (hivemq-amazon-kinesis-extension-4.42.0.jar)                 │                     │          │        │                   │                                                         │ frame flood                                                  │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-33871                   │
+├──────────────────────────────────────────────────────────────┤                     │          │        │                   │                                                         │                                                              │
+│ io.netty:netty-codec-http2                                   │                     │          │        │                   │                                                         │                                                              │
+│ (hivemq-data-lake-extension-4.42.0.jar)                      │                     │          │        │                   │                                                         │                                                              │
+│                                                              │                     │          │        │                   │                                                         │                                                              │
+├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.eclipse.jetty:jetty-http                                 │ CVE-2026-2332       │          │        │ 10.0.24           │ 12.1.7, 12.0.33, 11.0.28, 10.0.28, 9.4.60               │ org.eclipse.jetty/jetty-http: HTTP request smuggling via     │
+│ (hivemq-prometheus-extension-4.0.13.jar)                     │                     │          │        │                   │                                                         │ chunked extension quoted-string parsing                      │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-2332                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2024-6763       │ MEDIUM   │        │                   │ 12.0.12                                                 │ org.eclipse.jetty:jetty-http: jetty: Jetty URI parsing of    │
+│                                                              │                     │          │        │                   │                                                         │ invalid authority                                            │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2024-6763                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-11143      │ LOW      │        │                   │ 12.0.31, 12.1.5                                         │ org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security    │
+│                                                              │                     │          │        │                   │                                                         │ bypass due to differential URI parsing                       │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11143                   │
+├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.eclipse.jetty:jetty-http (hivemq.jar)                    │ CVE-2026-2332       │ HIGH     │        │ 9.4.57.v20241219  │ 12.1.7, 12.0.33, 11.0.28, 10.0.28, 9.4.60               │ org.eclipse.jetty/jetty-http: HTTP request smuggling via     │
+│                                                              │                     │          │        │                   │                                                         │ chunked extension quoted-string parsing                      │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2026-2332                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2024-6763       │ MEDIUM   │        │                   │ 12.0.12                                                 │ org.eclipse.jetty:jetty-http: jetty: Jetty URI parsing of    │
+│                                                              │                     │          │        │                   │                                                         │ invalid authority                                            │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2024-6763                    │
+│                                                              ├─────────────────────┼──────────┤        │                   ├─────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                                              │ CVE-2025-11143      │ LOW      │        │                   │ 12.0.31, 12.1.5                                         │ org.eclipse.jetty/jetty-http: org.eclipse.jetty: Security    │
+│                                                              │                     │          │        │                   │                                                         │ bypass due to differential URI parsing                       │
+│                                                              │                     │          │        │                   │                                                         │ https://avd.aquasec.com/nvd/cve-2025-11143                   │
+└──────────────────────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴─────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
